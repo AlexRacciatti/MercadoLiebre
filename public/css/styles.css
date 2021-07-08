@@ -13,8 +13,6 @@ header {
     background-color: #EAC926;
     width: 100%;
     padding: 0 15px 15px 15px;
-    position: fixed;
-    top: 0px;
 }
 
 .logo-searchbar-container {
@@ -26,8 +24,14 @@ header {
 
 .full-searchbar {
     display: flex;
-    width: 333px;
+    width: 450px;
     margin: auto;
+}
+
+.searchbar-container {
+    display: flex;
+    width: 100%;
+    position: relative;
 }
 
 .logo-principal {
@@ -37,12 +41,22 @@ header {
 
 .barra-busqueda {
     display: flex;
-    text-align: center;
     width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    border-radius: 6px;
 }
 
 .boton-busqueda {
     display: flex;
+    position: absolute;
+    left: 93%;
+    color: #666;
+    border: none;
+    top: 8px;
+    font-size: 22px;
+    background-color: #fff;
 }
 
 .headliner-1 {
@@ -54,6 +68,11 @@ header {
     text-decoration: none;
     display: flex;
     color: #000000;
+    padding: 10px;
+}
+
+.user-navbar-imgs {
+    margin-left: 3px;
 }
 
 .hamburguer {
@@ -70,7 +89,6 @@ header {
 
 .main-banner {
     width: 100%;
-    margin-top: 123px;
     display: flex;
     position: relative;
     z-index: -1;
@@ -79,7 +97,7 @@ header {
 main {
     width: 100%;
     text-align: center;
-    margin: 340px auto auto auto;
+    margin: auto;
 }
 
 section h2 {
@@ -232,8 +250,8 @@ footer section i {
 }
 
 @media (max-width: 360px){
-    main {
-        margin: 265px auto auto auto;
+    .boton-busqueda {
+        left: 91%;
     }
 
     .main-navbar {
@@ -280,6 +298,5 @@ footer section i {
     }
 
     main {
-        margin-top: 199px;
     }
 }
