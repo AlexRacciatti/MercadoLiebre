@@ -268,12 +268,13 @@ section h2 {
     border-radius: 5px;
     width: 90%;
     padding: 10px 0px;
+    color: white;
+    justify-content: center;
 }
 
 #content-login-button {
     text-decoration: none;
-    color: white;
-    justify-content: center;
+   
     display: flex;
     width: 100%;
 }
