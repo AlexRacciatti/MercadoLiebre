@@ -51,7 +51,7 @@ header {
 .boton-busqueda {
     display: flex;
     position: absolute;
-    left: 93%;
+    left: 91%;
     color: #666;
     border: none;
     top: 8px;
@@ -62,6 +62,8 @@ header {
 .headliner-1 {
     display: flex;
     text-align: center;
+    margin: auto;
+    padding: 10px 0px;
 }
 
 .main-navbar a{
@@ -87,11 +89,28 @@ header {
     font-size: 25px;
 }
 
+.main-navbar {
+    display: none;
+}
+
+.barritas {
+    margin-top: 21%;
+}
+
+#check-hamburguer {
+    display: none;
+
+}
+
+#check-hamburguer:checked ~ .main-navbar {
+    display: flex;
+    flex-direction: column;
+}
+
 .main-banner {
     width: 100%;
     display: flex;
     position: relative;
-    z-index: -1;
 }
 
 main {
@@ -100,20 +119,31 @@ main {
     margin: auto;
 }
 
+.articles-container {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
 section h2 {
+    display: block;
     font-size: 24px;
-    padding: 10px;
+    text-align: left;
+    padding-top: 3%;
+    width: 100%;
     color: #666;
+    margin-left: 1.5%;
 }
 
 .articulo {
     background-color: white;
-    width: 300px;
+    width: 250px;
     margin: 15px auto;
+    position: relative;
 }
 
 .articulo img {
-    width: 300px;
+    width: 100%;
 }
 
 .articulo div {
@@ -134,14 +164,41 @@ section h2 {
     color: green;
     font-size: 15px;
     padding: 5px;
+    position: absolute;
+    left: 74%;
+    bottom: 15%;
+}
+
+.articulo:hover div i {
+    animation: girito1 2s;
+}
+
+@keyframes girito1 {
+    from {
+        margin-left: -70%
+    }
+    
+    to {
+        margin-left: 5%;
+    }
 }
 
 .articulo div h3 {
+    display: none;
     font-size: 16px;
     font-weight: 400;
     color: #666;
     margin-left: 15px;
     padding-bottom: 15px;
+    transition: display 450ms;
+}
+
+.articulo:hover div h3 {
+    display: block;
+}
+
+#container-precio-oferta {
+    flex-flow: row;
 }
 
 .precio {
@@ -223,7 +280,9 @@ section h2 {
 
 
 footer{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     background-color: white;
     width: 100%;
     padding: 35px;
@@ -232,45 +291,59 @@ footer{
 footer section{
     text-align: center;
     width: 100%;
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 25px;
-
+    padding: 10px;
 }
 
 footer section i {
     font-size: 2em;
     margin-bottom: 10px;
     color: #1259c3;
+    transition: color 450ms;
 }
+
+#pagos-footer:hover i {
+    color: #03264C;
+}
+
+#envios-footer:hover i {
+    color: #03264C;
+}
+
+#seguridad-footer:hover i {
+    color: #03264C;
+}
+
 
 #copyright-disclaimer {
+    display: block;
+    width: 100%;
     text-align: left;
-    padding: 0px;
-    margin: 10px 0px 0px 0px;
-}
-
-@media (max-width: 360px){
-    .boton-busqueda {
-        left: 91%;
-    }
-
-    .main-navbar {
-        display: none;
-    }
-
-    .headliner-1 {
-        margin: auto;
-        padding: 10px 0px;
-    }
-
-    .articulo div h3 {
-        display: none;
-    }
 }
 
 @media (min-width: 361px) {
+    
+    .headliner-1 {
+        margin: 0px;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+    }
+
+    .boton-busqueda {
+        left: 93%;
+    }
+
     .articulo {
         box-shadow : 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+    .articulo div i {
+        bottom: 21%;
+    }
+
+    .articulo div h3 {
+        display: block;
     }
 
     .hamburguer {
@@ -292,11 +365,16 @@ footer section i {
         font-weight: 500;
     }
 
+    footer {
+        flex-flow: row wrap;
+    }
+    
+    footer section {
+        width: 33%;
+    }
+
     .form-control {
         max-width: 1200px;
         margin: auto;
-    }
-
-    main {
     }
 }

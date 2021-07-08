@@ -21,6 +21,10 @@
             </form>
             <p class="headliner-1"> <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
         </div>
+
+        <input type="checkbox" name="check-hamburguer" id="check-hamburguer">
+        <label for="check-hamburguer" class="hamburguer"><i class="fas fa-bars barritas"></i></label> 
+        
         <nav class="main-navbar">
             <div class="navbar-productos">
                 <ul type= "none">
@@ -40,18 +44,20 @@
             </div>
         </nav>
 
-        <button class="hamburguer"><i class="fas fa-bars"></i></button>
+        
     </header>
     <main>
         <img src="img/img-home-banner.jpg" alt="banner MeLi" class="main-banner">
-        <section>
+        <section class="articles-container">
             <h2>Basado en tu última visita</h2>
             <article class="articulo">
                 <img src='/img/img-cafetera-moulinex.jpg'/>
                 <div>
                     <i class="fas fa-truck"></i>
-                    <p class="precio">$6.770</p>
-                    <p class="oferta">40% off</p>
+                    <div id="container-precio-oferta">
+                        <p class="precio">$6.770</p>
+                        <p class="oferta">40% off</p>
+                    </div>
                     <br>
                     <h3>Cafetera Moulinex</h3>
                 </div>
@@ -60,8 +66,10 @@
                 <img src='/img/img-samsung-galaxy-s10.jpg'/>
                 <div>
                     <i class="fas fa-truck"></i>
-                    <p class="precio">$70.500</p>
-                    <p class="oferta">33% off con la tarjeta alimentar</p>
+                    <div id="container-precio-oferta">
+                        <p class="precio">$70.500</p>
+                        <p class="oferta">33% off</p>
+                    </div>
                     <br>
                     <h3>Samsung Galaxy S10</h3>
                 </div>
@@ -70,8 +78,10 @@
                 <img src='/img/img-tv-samsung-smart.jpg'/>
                 <div>
                     <i class="fas fa-truck"></i>
-                    <p class="precio">$55.000</p>
-                    <p class="oferta">50% off presentando un ticket de estacionamiento</p>
+                    <div id="container-precio-oferta">
+                        <p class="precio">$55.000</p>
+                        <p class="oferta">50% off</p>
+                    </div>
                     <br>
                     <h3>Smart TV samsung 43" 4K</h3>
                 </div>
@@ -80,22 +90,26 @@
                 <img src='/img/img-macbook-pro-2019.jpg'/>
                 <div>
                     <i class="fas fa-truck"></i>
-                    <p class="precio">$230.000</p>
-                    <p class="oferta">20% off</p>
+                    <div id="container-precio-oferta">
+                        <p class="precio">$230.000</p>
+                        <p class="oferta">20% off</p>
+                    </div>
                     <br>
                     <h3>Mackbook Pro 2019</h3>
                 </div>
             </article>
         </section>
 
-        <section>
+        <section class="articles-container">
             <h2>Ofertas</h2>
             <article class="articulo">
                 <img src='/img/img-samsung-galaxy-s10.jpg'/>
                 <div>
                     <i class="fas fa-truck"></i>
-                    <p class="precio">$70.500</p>
-                    <p class="oferta">33% off con la tarjeta alimentar</p>
+                    <div id="container-precio-oferta">
+                        <p class="precio">$70.500</p>
+                        <p class="oferta">33%</p>
+                    </div>
                     <br>
                     <h3>Samsung Galaxy S10</h3>
                 </div>
@@ -104,8 +118,10 @@
                 <img src='/img/img-tv-samsung-smart.jpg'/>
                 <div>
                     <i class="fas fa-truck"></i>
-                    <p class="precio">$55.000</p>
-                    <p class="oferta">50% off presentando un ticket de estacionamiento</p>
+                    <div id="container-precio-oferta">
+                        <p class="precio">$55.000</p>
+                        <p class="oferta">50% off</p>
+                    </div>
                     <br>
                     <h3>Smart TV samsung 43" 4K</h3>
                 </div>
@@ -114,8 +130,10 @@
                 <img src='/img/img-cafetera-moulinex.jpg'/>
                 <div>
                     <i class="fas fa-truck"></i>
-                    <p class="precio">$6.770</p>
-                    <p class="oferta">40% off</p>
+                    <div id="container-precio-oferta">
+                        <p class="precio">$6.770</p>
+                        <p class="oferta">40% off</p>
+                    </div>
                     <br>
                     <h3>Cafetera Moulinex</h3>
                 </div>
@@ -124,8 +142,10 @@
                 <img src='/img/img-macbook-pro-2019.jpg'/>
                 <div>
                     <i class="fas fa-truck"></i>
-                    <p class="precio">$230.000</p>
-                    <p class="oferta">20% off</p>
+                    <div id="container-precio-oferta">
+                        <p class="precio">$230.000</p>
+                        <p class="oferta">20% off</p>
+                    </div>
                     <br>
                     <h3>Mackbook Pro 2019</h3>
                 </div>
@@ -133,23 +153,23 @@
         </section>
     </main>
     <footer>
-        <section >
+        <section id="pagos-footer">
             <i class="fas fa-credit-card"></i>
             <h3>Pagá con tarjeta o efectivo</h3>
             <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
         </section>
-        <section>
+        <section id="envios-footer">
             <i class="fas fa-gift"></i>
             <h3>Envío gratis desde los $2.500</h3>
             <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
         </section>
-        <section>
+        <section id="seguridad-footer">
             <i class="fas fa-user-shield"></i>
             <h3>Seguridad, de principio a fin</h3>
             <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
         </section>
-        <section>
-            <p id="copyright-disclaimer">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        <section id="copyright-disclaimer">
+            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </section>
     </footer>
 </body>

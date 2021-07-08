@@ -21,6 +21,10 @@
             </form>
             <p class="headliner-1"> <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
         </div>
+
+        <input type="checkbox" name="check-hamburguer" id="check-hamburguer">
+        <label for="check-hamburguer" class="hamburguer"><i class="fas fa-bars barritas"></i></label> 
+        
         <nav class="main-navbar">
             <div class="navbar-productos">
                 <ul type= "none">
@@ -40,7 +44,7 @@
             </div>
         </nav>
 
-        <button class="hamburguer"><i class="fas fa-bars"></i></button>
+        
     </header>
 
     <main>
@@ -48,17 +52,17 @@
 
         <form action="" method="" class="form-control">
             <div>
-                <input type="text" placeholder="Nombre y apellido" class="input-sizing" id="nombre-y-apellido"/>
+                <input type="text" placeholder="Nombre y apellido" class="input-sizing" id="nombre-y-apellido" required/>
             </div>
             <div>
-                <input type="text" placeholder="Nombre de Usuario" class="input-sizing"/>
+                <input type="text" placeholder="Nombre de Usuario" class="input-sizing" required/>
             </div>
             <div>
                 <label for="fecha-nacimiento" class="subtitulo">Fecha de nacimiento</label>
-                <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" min="1920-01-01" max="2003-01-01" class="input-sizing"/>
+                <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" min="1920-01-01" max="2003-01-01" class="input-sizing" required/>
             </div>
             <div>
-                <input type="text" placeholder="Domicilio" name="domicilio" class="input-sizing"/>
+                <input type="text" placeholder="Domicilio" name="domicilio" class="input-sizing" required/>
             </div>
             <div>
                 <label for="perfil-usuario" class="subtitulo">Perfil del usuario</label>
@@ -80,10 +84,10 @@
                 <input type="file" name="archivo" accept=".jpg" id="foto-de-perfil" class="input-sizing">
             </div>
             <div>
-                <input type="password" name="contraseña" placeholder="Contraseña" class="input-sizing">
+                <input type="password" name="contraseña" placeholder="Contraseña" class="input-sizing" required>
             </div>
             <div>
-                <input type="password" name="contraseña" placeholder="Confirmar contraseña" class="input-sizing">
+                <input type="password" name="contraseña" placeholder="Confirmar contraseña" class="input-sizing" required>
             </div>
             <div id="button-container">
                 <button type="submit">Crear cuenta</button>
@@ -92,25 +96,24 @@
         </form>
     </main>
     <footer>
-        <section >
+        <section id="pagos-footer">
             <i class="fas fa-credit-card"></i>
             <h3>Pagá con tarjeta o efectivo</h3>
             <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
         </section>
-        <section>
+        <section id="envios-footer">
             <i class="fas fa-gift"></i>
             <h3>Envío gratis desde los $2.500</h3>
             <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
         </section>
-        <section>
+        <section id="seguridad-footer">
             <i class="fas fa-user-shield"></i>
             <h3>Seguridad, de principio a fin</h3>
             <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
         </section>
-        <section>
-            <p id="copyright-disclaimer">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        <section id="copyright-disclaimer">
+            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </section>
     </footer>
-    
 </body>
 </html>
